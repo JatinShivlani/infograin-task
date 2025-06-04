@@ -5,11 +5,7 @@ import connectDB from "@/config/db";
 import { writeFile } from "fs/promises";
 import path from "path";
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
+
 
 export async function POST(req) {
   await connectDB();

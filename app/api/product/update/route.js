@@ -5,11 +5,6 @@ import connectDB from "@/config/db";
 import { writeFile } from "fs/promises";
 import path from "path";
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
 
 // Optional: Add GET for testing in browser
 export async function GET() {
