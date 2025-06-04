@@ -26,10 +26,6 @@ export default function LoginPage() {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  //remove token
-  if(localStorage.getItem("token")){
-    localStorage.removeItem("token");
-  }
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
