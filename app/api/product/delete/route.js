@@ -3,12 +3,6 @@ import jwt from "jsonwebtoken";
 import Product from "@/models/Product";
 import connectDB from "@/config/db";
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
-
 export async function POST(req) {
   await connectDB();
 
